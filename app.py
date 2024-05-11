@@ -5,7 +5,7 @@ import streamlit as st
 
 from PIL import Image
 
-pickle_in = open("./classifier.pkl","rb")
+pickle_in = open("classifier.pkl","rb")
 classifier = pickle.load(pickle_in)
 
 def welcome():
@@ -46,7 +46,6 @@ def predict_note_authentication(variance, skewness,curtois, entropy):
 
 def main():
   st.title("Bank Authenticator")
-  st.header("Puput Budi Wintoro")
   html_temp = """
   <div style="background-color:tomato;padding:10px">
   <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App</h2>
