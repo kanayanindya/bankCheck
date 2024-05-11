@@ -5,7 +5,7 @@ import streamlit as st
 
 from PIL import Image
 
-pickle_in = open("https://github.com/kanayanindya/bankCheck/blob/main/classifier.pkl","rb")
+pickle_in = open("./classifier.pkl","rb")
 classifier = pickle.load(pickle_in)
 
 def welcome():
